@@ -1,3 +1,4 @@
+@import "variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
 body {
@@ -7,8 +8,13 @@ body {
 .btn btn-info {
     border-radius: 20px;
 }
+/***************** HEADER ******************/
 
 /***************** CONTENT ******************/
+
+/***************** PRE-FOOTER ***************/
+
+/***************** FOOTER ******************/
 
 .cards-pricing {
     display: flex;
@@ -24,4 +30,9 @@ body {
 
 .border-bottom {
     border-bottom: solid black;
+}
+
+.nav-network {
+    color: $icons;
+    display: flex;
 }
