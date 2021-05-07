@@ -2,4 +2,69 @@
 
 {% block body %}
     <h1>Tarifs</h1>
+        <div class="buttons-section">
+            <button type="button" class="btn btn-light">Particulier</button>
+            <button type="button" class="btn btn-light">Professionnel</button>
+            <button type="button" class="btn btn-light">Financement CPF</button>
+        </div>
+        <div class="cards-pricing">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SOLO</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
+                            <ul class="card-text">
+                                <li>1 écran simultané</li>
+                                <li>Sans engagement</li>
+                                <li>Annulable à tout moment</li>
+                            </ul>
+                        <p><strong class="card-sub-days">14 jours d'essai gratuit</strong></p>
+                        <button type="button" class="btn btn-info">Choisir</button>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">FAMILLE</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
+                            <ul class="card-text">
+                                <li>4 écrans simultanés</li>
+                                <li>Création de profils</li>
+                                <li>Sans engagement</li>
+                                <li>Annulable à tout moment</li>
+                            </ul>
+                        <p><strong class="card-sub-days">14 jours d'essai gratuit</strong></p>
+                        <button type="button" class="btn btn-info">Choisir</button>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">À VIE</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
+                            <ul class="card-text">
+                                <li>1 écran simultané</li>
+                            </ul>
+                        <p><strong class="card-sub-days">14 jours d'essai gratuit</strong></p>
+                        <button type="button" class="btn btn-info">Choisir</button>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="frequently-asked">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Questions fréquentes</a>
+                    </li>
+                </div>
+            <div class="banneer-cpf">
+            <div class="card">
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            </div>
+        </div>
+        {% include "_prefooter-banneer.html.twig" %}
 {% endblock %}
