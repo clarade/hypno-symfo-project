@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: lightgray;
+}
+
+.btn btn-info {
+    border-radius: 20px;
+}
+
+/***************** CONTENT ******************/
+
+.cards-pricing {
+    display: flex;
+}
