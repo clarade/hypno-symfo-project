@@ -5,8 +5,8 @@ body {
     background-color: lightgray;
 }
 
-.btn btn-info {
-    border-radius: 20px;
+.btn-radius-25 {
+    border-radius: 25px;
 }
 /***************** HEADER ******************/
 
@@ -18,6 +18,11 @@ body {
 
 .cards-pricing {
     display: flex;
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: center;
 }
 
 .frequent-questions {
@@ -35,4 +40,10 @@ body {
 .nav-network {
     color: $icons;
     display: flex;
+}
+
+.frequently-asked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
