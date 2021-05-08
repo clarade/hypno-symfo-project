@@ -22,13 +22,22 @@ body {
 
 .cards-pricing {
     display: flex;
+    align-items: baseline;
 }
 
 .buttons-section {
     display: flex;
     justify-content: center;
-    padding: 3em 1em 3em 1em;
     gap: 1rem;
+}
+
+.z-index-background {
+    z-index: 5;
+    width: 100%;
+}
+
+.additionnal-padding {
+    padding: 3em 1em 3em 1em;
 }
 
 .btn-default-size {
@@ -37,15 +46,15 @@ body {
 }
 
 .default-size-card {
-    width: 330px;
     height: 500px;
 }
 
 .expanded-main-card {
-    width: 330px;
     height: 550px;
-    display: flex;
-    align-items: baseline;
+}
+
+.no-border {
+    border: 0;
 }
 
 .shading {
@@ -79,4 +88,20 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+
+    > div {
+        display: grid;
+        place-items: center;
+    }
+}
+
+.banneer-style {
+    display: flex;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }

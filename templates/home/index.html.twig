@@ -2,31 +2,33 @@
 
 {% block body %}
     <h1>Tarifs</h1>
-        <div class="buttons-section">
+        <div class="buttons-section additionnal-padding">
             <button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Particulier</button>
             <button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Professionnel</button>
             <button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Financement CPF</button>
         </div>
         <div class="cards-pricing">
             <div class="solo-card">
-                <div class="card default-size-card">
-                    <div class="card-body">
-                        <h5 class="card-title">SOLO</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
-                                    <ul class="card-text">
-                                        <li>1 écran simultané</li>
-                                        <li>Sans engagement</li>
-                                        <li>Annulable à tout moment</li>
-                                    </ul>
-                                <p><strong class="card-sub-days">14 jours d'essai gratuit</strong></p>
-                            <button type="button" class="btn btn-info btn-radius-25">Choisir</button>
+                <div class="card no-border" >
+                    
+                        <div class="card-body default-size-card">
+                            <h5 class="card-title">SOLO</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
+                                        <ul class="card-text">
+                                            <li>1 écran simultané</li>
+                                            <li>Sans engagement</li>
+                                            <li>Annulable à tout moment</li>
+                                        </ul>
+                                    <p><strong class="card-sub-days">14 jours d'essai gratuit</strong></p>
+                                <button type="button" class="btn btn-info btn-radius-25">Choisir</button>
+                        
                     </div>
                 </div>
             </div>
             <div class="family-card">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body expanded-main-card">
+                <div class="card no-border expanded-main-card" >
+                    <div class="card-body">
                         <h5 class="card-title">FAMILLE</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                                 <p><strong class="card-detail">Accès illimité à toutes les langues</strong></p>
@@ -42,7 +44,7 @@
                 </div>
             </div>
             <div class="lifetime-card">
-                <div class="card" style="width: 18rem;">
+                <div class="card no-border">
                     <div class="card-body default-size-card">
                         <h5 class="card-title">À VIE</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -55,20 +57,33 @@
                     </div>
                 </div>
             </div>
+        <div class="flat-forms-background">
+            <img src="{{ asset('build/images/turquoise-citrus-forms.svg') }}" alt=" turquoise and citrus flat forms">
         </div>
-        <div class="frequently-asked">
+        </div>
+        <div class="frequently-asked additionnal-padding">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Questions fréquentes</a>
                 </li>
             </ul>
         </div>
-        <div class="banneer-cpf">
-            <div class="card">
-                <div class="card-body">
-                    This is some text within a card body.
+        <div class="container">
+                <div class="banneer-cpf row justify-content-center">
+                    <div class="col-8">
+                        <div class="card mb-3 p-5" style="background-image: url({{ asset('build/images/smartphone-user.png') }}) z-index-background">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                    </div>
+                                    <div class="col-9" style="background-color:#25A89B">
+                                    <h4 class="card-title">Vous avez un CPF?</h4>
+                                        <p class="card-text">When I was a young man, even a teenager for that matter, 
+                                        I always had an optimism that was hard for.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
         {% include "_prefooter-banneer.html.twig" %}
 {% endblock %}
