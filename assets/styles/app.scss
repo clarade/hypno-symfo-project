@@ -1,17 +1,26 @@
-@import "variables.scss";
-@import "~bootstrap/scss/bootstrap";
+@import 'variables.scss';
+@import '~bootstrap/scss/bootstrap';
+
+/*********** GENERAL ***********/
 
 body {
-    background-color: lightgray;
+	background-color: rgb(255, 255, 255);
 }
 
 .btn-radius-25 {
-    border-radius: 25px;
+	border-radius: 25px;
 }
 
 .btn-content-spacing {
-    padding-left: 1.5em;
+	padding-left: 1.5em;
 }
+
+/*********** HEADING *************/
+
+h6 {
+	padding: 10px 0 10px 0;
+}
+
 /***************** HEADER ******************/
 
 /***************** CONTENT ******************/
@@ -21,87 +30,135 @@ body {
 /***************** FOOTER ******************/
 
 .cards-pricing {
-    display: flex;
-    align-items: baseline;
+	display: flex;
+	align-items: baseline;
 }
 
 .buttons-section {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .z-index-background {
-    z-index: 5;
-    width: 100%;
+	z-index: 5;
+	width: 100%;
 }
 
 .additionnal-padding {
-    padding: 3em 1em 3em 1em;
+	padding: 3em 1em 3em 1em;
 }
 
 .btn-default-size {
-    width: 200px;
-    height: 50px;
+	width: 200px;
+	height: 50px;
 }
 
 .default-size-card {
-    height: 500px;
+	height: 500px;
 }
 
 .expanded-main-card {
-    height: 550px;
+	height: 550px;
 }
 
 .no-border {
-    border: 0;
+	border: 0;
 }
 
 .shading {
-    box-shadow: 0px 2px 8px #777777;
+	box-shadow: 0px 2px 8px #777777;
 }
 
 .frequent-questions {
-    width: 50%;
+	width: 50%;
 }
 
 .questions-list {
-    width: 50%;
+	width: 50%;
 }
 
 .border-bottom {
-    border-bottom: solid black;
+	border-bottom: solid black;
 }
 
 .nav-network {
-    color: $icons;
-    display: flex;
+	color: $icons;
+	display: flex;
 }
 
 .frequently-asked {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .cards-pricing {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 
-    > div {
-        display: grid;
-        place-items: center;
-    }
+	> div {
+		display: grid;
+		place-items: center;
+	}
+}
+
+/********* PRE-FOOTER & FOOTER PARTS **********/
+
+/********* PRE FOOTER *********/
+
+.padding-pre-footer {
+	padding: 3em 1.5em 3em 1.5em;
 }
 
 .banneer-style {
-    display: flex;
+	display: flex;
 }
 
 .right-section {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.banneer-hypno {
+	display: flex;
+	justify-content: space-between;
+}
+
+/********* FOOTER **********/
+
+.footer-infos {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-blocks {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-banneer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+/******** COLORS SECTIONS **********/
+
+.bg-color {
+	background-color: $main-bg-color;
+	color: $font-color;
+}
+
+.footer-color {
+	background-color: $darker-color-sections;
+	color: $font-color;
+}
+
+.partners-img {
+	padding: 7px 0 7px 0;
+	gap: 10px;
 }
