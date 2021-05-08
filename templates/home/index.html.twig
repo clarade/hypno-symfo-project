@@ -1,97 +1,114 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<h1>
-		Tarifs
-	</h1>
-	<div class="buttons-section additionnal-padding">
-		<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Particulier</button>
-		<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Professionnel</button>
-		<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Financement CPF</button>
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col">
+			<h1>Tarifs</h1>
+		</div>
 	</div>
-	<div class="cards-pricing">
-		<div class="solo-card">
-			<div class="card no-border">
-				<div class="card-body default-size-card">
-					<h5 class="card-title">
-						SOLO
-					</h5>
-					<h6 class="card-subtitle mb-2 text-muted">
-						Card subtitle
-					</h6>
-					<p>
-						<strong class="card-detail">Accès illimité à toutes les langues</strong>
-					</p>
-					<ul class="card-text">
-						<li>1 écran simultané</li>
-						<li>Sans engagement</li>
-						<li>Annulable à tout moment</li>
-					</ul>
-					<p>
-						<strong class="card-sub-days">14 jours d'essai gratuit</strong>
-					</p>
-					<button type="button" class="btn btn-info btn-radius-25">Choisir</button>
+	<div class="row justify-content-center">
+		<div class="col-3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Particulier</button>
+		</div>
+		<div class="col-3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Professionnel</button>
+		</div>
+		<div class="col-3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Financement CPF</button>	
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-3">
+			<div class="solo-card">
+				<div class="card no-border">
+					<div class="card-body default-size-card">
+						<h5 class="card-title">
+							SOLO
+						</h5>
+						<h6 class="card-subtitle mb-2 text-muted">
+							Card subtitle
+						</h6>
+						<p>
+							<strong class="card-detail">Accès illimité à toutes les langues</strong>
+						</p>
+						<ul class="card-text">
+							<li>1 écran simultané</li>
+							<li>Sans engagement</li>
+							<li>Annulable à tout moment</li>
+						</ul>
+						<p>
+							<strong class="card-sub-days">14 jours d'essai gratuit</strong>
+						</p>
+						<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					</div>
+				</div>
+		</div>
+		</div>
+		<div class="col-3">
+			<div class="family-card">
+				<div class="card no-border expanded-main-card">
+					<div class="card-body">
+						<h5 class="card-title">
+							FAMILLE
+						</h5>
+						<h6 class="card-subtitle mb-2 text-muted">
+							Card subtitle
+						</h6>
+						<p>
+							<strong class="card-detail">Accès illimité à toutes les langues</strong>
+						</p>
+						<ul class="card-text">
+							<li>4 écrans simultanés</li>
+							<li>Création de profils</li>
+							<li>Sans engagement</li>
+							<li>Annulable à tout moment</li>
+						</ul>
+						<p>
+							<strong class="card-sub-days">14 jours d'essai gratuit</strong>
+						</p>
+						<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="family-card">
-			<div class="card no-border expanded-main-card">
-				<div class="card-body">
-					<h5 class="card-title">
-						FAMILLE
-					</h5>
-					<h6 class="card-subtitle mb-2 text-muted">
-						Card subtitle
-					</h6>
-					<p>
-						<strong class="card-detail">Accès illimité à toutes les langues</strong>
-					</p>
-					<ul class="card-text">
-						<li>4 écrans simultanés</li>
-						<li>Création de profils</li>
-						<li>Sans engagement</li>
-						<li>Annulable à tout moment</li>
-					</ul>
-					<p>
-						<strong class="card-sub-days">14 jours d'essai gratuit</strong>
-					</p>
-					<button type="button" class="btn btn-info btn-radius-25">Choisir</button>
+		<div class="col-3">
+			<div class="lifetime-card">
+				<div class="card no-border">
+					<div class="card-body default-size-card shadding">
+						<h5 class="card-title">
+							À VIE
+						</h5>
+						<h6 class="card-subtitle mb-2 text-muted">
+							Card subtitle
+						</h6>
+						<p>
+							<strong class="card-detail">Accès illimité à toutes les langues</strong>
+						</p>
+						<ul class="card-text">
+							<li>1 écran simultané</li>
+						</ul>
+						<p>
+							<strong class="card-sub-days">14 jours d'essai gratuit</strong>
+						</p>
+						<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="lifetime-card">
-			<div class="card no-border">
-				<div class="card-body default-size-card">
-					<h5 class="card-title">
-						À VIE
-					</h5>
-					<h6 class="card-subtitle mb-2 text-muted">
-						Card subtitle
-					</h6>
-					<p>
-						<strong class="card-detail">Accès illimité à toutes les langues</strong>
-					</p>
-					<ul class="card-text">
-						<li>1 écran simultané</li>
-					</ul>
-					<p>
-						<strong class="card-sub-days">14 jours d'essai gratuit</strong>
-					</p>
-					<button type="button" class="btn btn-info btn-radius-25">Choisir</button>
-				</div>
-			</div>
-		</div>
-		<div class="flat-forms-background">
+		<div class="row">
 			<img src="{{ asset('build/images/turquoise-citrus-forms.svg') }}" alt=" turquoise and citrus flat forms" />
 		</div>
 	</div>
-	<div class="frequently-asked additionnal-padding">
-		<ul class="nav justify-content-center">
-			<li class="nav-item"><a class="nav-link" href="#">Questions fréquentes</a></li>
-		</ul>
+	<div class="row justify-content-center">
+		<div class="col">
+    		<nav class="nav">
+				<a class="nav-link link-turquoise" href="#">Questions fréquentes</a>
+    		</nav>
+		</div>
 	</div>
-	<div class="container">
-		<div class="banneer-cpf row justify-content-center">
+	<div class="row justify-content-center">
+		<div class="col">
 			<div class="col-8">
 				<div class="card mb-3 p-5"
 					style="background-image: url({{ asset('build/images/smartphone-user.png') }}) z-index-background">
@@ -111,5 +128,6 @@
 			</div>
 		</div>
 	</div>
+</container>
 	{% include '_prefooter-banneer.html.twig' %}
 {% endblock %}

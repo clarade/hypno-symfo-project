@@ -4,7 +4,7 @@
 /*********** GENERAL ***********/
 
 body {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(129, 49, 109);
 }
 
 .btn-radius-25 {
@@ -16,6 +16,13 @@ body {
 }
 
 /*********** HEADING *************/
+
+h1 {
+	font-size: 115px;
+	display: flex;
+	justify-content: center;
+	padding: 55px 0 50px 0;
+}
 
 h6 {
 	padding: 10px 0 10px 0;
@@ -70,14 +77,6 @@ h6 {
 	box-shadow: 0px 2px 8px #777777;
 }
 
-.frequent-questions {
-	width: 50%;
-}
-
-.questions-list {
-	width: 50%;
-}
-
 .border-bottom {
 	border-bottom: solid black;
 }
@@ -89,8 +88,7 @@ h6 {
 
 .frequently-asked {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	text-align: center;
 }
 
 .cards-pricing {
@@ -112,15 +110,29 @@ h6 {
 	padding: 3em 1.5em 3em 1.5em;
 }
 
+.frequent-questions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.questions-list {
+	width: 50%;
+}
+
 .banneer-style {
 	display: flex;
 }
 
-.right-section {
-	width: 50%;
+.left-section {
+	width: 40%;
 	display: flex;
 	flex-direction: column;
-	text-align: right;
+}
+
+.right-section {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
 }
 .banneer-hypno {
 	display: flex;
@@ -161,4 +173,16 @@ h6 {
 .partners-img {
 	padding: 7px 0 7px 0;
 	gap: 10px;
+}
+
+a {
+	color: white;
+}
+
+.link-turquoise {
+	color: $darker-color-sections;
+}
+
+.btn-color {
+	background-color: #1a6b63;
 }
