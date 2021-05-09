@@ -1,15 +1,120 @@
-@import "~bootstrap/scss/bootstrap";
+@import 'variables.scss';
+@import '~bootstrap/scss/bootstrap';
+
+/*********** GENERAL ***********/
 
 body {
-    background-color: lightgray;
+	background-color: rgb(129, 49, 109);
 }
 
-.btn btn-info {
-    border-radius: 20px;
+.btn-radius-25 {
+	border-radius: 25px;
 }
+
+.btn-content-spacing {
+	padding-left: 1.5em;
+}
+
+/*********** HEADING *************/
+
+h1 {
+	font-size: 115px;
+	display: flex;
+	justify-content: center;
+	padding: 55px 0 50px 0;
+}
+
+/***************** HEADER ******************/
 
 /***************** CONTENT ******************/
 
+/***************** PRE-FOOTER ***************/
+
+/***************** FOOTER ******************/
+
+.z-index-background {
+	z-index: 5;
+	width: 100%;
+}
+
+.additionnal-padding {
+	padding: 3em 1em 3em 1em;
+}
+
+.btn-default-size {
+	width: 200px;
+	height: 50px;
+}
+
+.default-size-card {
+	height: 500px;
+}
+
+.expanded-main-card {
+	height: 550px;
+}
+
+.no-border {
+	border: 0;
+}
+
+.shading {
+	box-shadow: 0px 2px 8px #777777;
+}
+
+.border-bottom {
+	border-bottom: solid black;
+}
+
 .cards-pricing {
-    display: flex;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	> div {
+		display: grid;
+		place-items: center;
+	}
+}
+
+/********* PRE-FOOTER & FOOTER PARTS **********/
+
+/********* PRE FOOTER *********/
+
+/********* FOOTER **********/
+
+/******** COLORS SECTIONS **********/
+
+.bg-color {
+	background-color: $main-bg-color;
+	color: $font-color;
+}
+
+.footer-color {
+	background-color: $darker-color-sections;
+	color: $font-color;
+}
+
+.font-12 {
+	font-size: 12px;
+}
+
+.font-14 {
+	font-size: 14px;
+}
+
+a {
+	color: white;
+}
+
+.link-turquoise {
+	color: $darker-color-sections;
+}
+
+.topnav-links {
+	color: rgb(41, 41, 41);
+}
+
+.btn-color {
+	background-color: #1a6b63;
 }
