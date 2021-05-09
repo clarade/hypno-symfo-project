@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="container">
-	<div class="row justify-content-center">
-		<div class="col">
-			<h1>Tarifs</h1>
-		</div>
+
+<div class="row justify-content-center">
+	<div class="col">
+		<h1>Tarifs</h1>
 	</div>
-	<div class="row justify-content-center">
+</div>
+	<div class="row justify-content-center p-5">
 		<div class="col-3">
 			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Particulier</button>
 		</div>
@@ -100,7 +100,7 @@
 			<img src="{{ asset('build/images/turquoise-citrus-forms.svg') }}" alt=" turquoise and citrus flat forms" />
 		</div>
 	</div>
-	<div class="row justify-content-center">
+	<div class="row justify-content-center p-5">
 		<div class="col">
     		<nav class="nav">
 				<a class="nav-link link-turquoise" href="#">Questions fréquentes</a>
@@ -123,11 +123,11 @@
 								for.
 							</p>
 						</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</container>
 	{% include '_prefooter-banneer.html.twig' %}
 {% endblock %}
