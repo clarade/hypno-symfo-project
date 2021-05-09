@@ -24,10 +24,6 @@ h1 {
 	padding: 55px 0 50px 0;
 }
 
-h6 {
-	padding: 10px 0 10px 0;
-}
-
 /***************** HEADER ******************/
 
 /***************** CONTENT ******************/
@@ -35,17 +31,6 @@ h6 {
 /***************** PRE-FOOTER ***************/
 
 /***************** FOOTER ******************/
-
-.cards-pricing {
-	display: flex;
-	align-items: baseline;
-}
-
-.buttons-section {
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-}
 
 .z-index-background {
 	z-index: 5;
@@ -81,16 +66,6 @@ h6 {
 	border-bottom: solid black;
 }
 
-.nav-network {
-	color: $icons;
-	display: flex;
-}
-
-.frequently-asked {
-	display: flex;
-	text-align: center;
-}
-
 .cards-pricing {
 	display: flex;
 	justify-content: center;
@@ -106,57 +81,7 @@ h6 {
 
 /********* PRE FOOTER *********/
 
-.padding-pre-footer {
-	padding: 3em 1.5em 3em 1.5em;
-}
-
-.frequent-questions {
-	display: flex;
-	justify-content: space-between;
-}
-
-.questions-list {
-	width: 50%;
-}
-
-.banneer-style {
-	display: flex;
-}
-
-.left-section {
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-}
-
-.right-section {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
-}
-.banneer-hypno {
-	display: flex;
-	justify-content: space-between;
-}
-
 /********* FOOTER **********/
-
-.footer-infos {
-	display: flex;
-	justify-content: space-around;
-}
-
-.footer-blocks {
-	display: flex;
-	flex-direction: column;
-}
-
-.footer-banneer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
-}
 
 /******** COLORS SECTIONS **********/
 
@@ -170,9 +95,12 @@ h6 {
 	color: $font-color;
 }
 
-.partners-img {
-	padding: 7px 0 7px 0;
-	gap: 10px;
+.font-12 {
+	font-size: 12px;
+}
+
+.font-14 {
+	font-size: 14px;
 }
 
 a {
@@ -181,6 +109,10 @@ a {
 
 .link-turquoise {
 	color: $darker-color-sections;
+}
+
+.topnav-links {
+	color: rgb(41, 41, 41);
 }
 
 .btn-color {

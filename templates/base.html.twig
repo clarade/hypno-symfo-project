@@ -14,15 +14,18 @@
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
+	</head>
+	<body>
 		{% block header %}
 			{% include '_topnav.html.twig' %}
 		{% endblock %}
-	</head>
-	<body>
+		<div class="container">
 		{% block body %}
 
 		{% endblock %}
-		<footer>
+		</div>
+
+		<footer class="container-fluid bg-color font-12">
 			{% include '_footer.html.twig' %}
 		</footer>
 		{% block javascripts %}
