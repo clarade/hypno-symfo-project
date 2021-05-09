@@ -4,15 +4,11 @@
 /*********** GENERAL ***********/
 
 body {
-	background-color: rgb(129, 49, 109);
+	background-color: rgb(233, 233, 233);
 }
 
 .btn-radius-25 {
 	border-radius: 25px;
-}
-
-.btn-content-spacing {
-	padding-left: 1.5em;
 }
 
 /*********** HEADING *************/
@@ -85,9 +81,27 @@ h1 {
 
 /******** COLORS SECTIONS **********/
 
+.citrus-element {
+	color: $citrus-color;
+}
+
+.turquoise-element {
+	color: $darker-color-sections;
+}
+
 .bg-color {
 	background-color: $main-bg-color;
 	color: $font-color;
+}
+
+.bg-color-banneer-w {
+	background-color: #ffffff;
+	opacity: 70%;
+}
+
+.bg-color-banneer-t {
+	background-color: $main-bg-color;
+	opacity: 70%;
 }
 
 .footer-color {
@@ -107,7 +121,7 @@ a {
 	color: white;
 }
 
-.link-turquoise {
+.turquoise-txt {
 	color: $darker-color-sections;
 }
 
@@ -117,4 +131,28 @@ a {
 
 .btn-color {
 	background-color: #1a6b63;
+	color: #ffffff;
+}
+
+.font-white {
+	color: #ffffff;
+}
+
+.rounded-l {
+	border-top-left-radius: 0.25rem !important;
+	border-bottom-left-radius: 0.25rem !important;
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+.rounded-r {
+	border-top-right-radius: 0.25rem !important;
+	border-bottom-right-radius: 0.25rem !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+}
+
+.grid-center {
+	display: grid;
+	place-items: center;
 }
