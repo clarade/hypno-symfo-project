@@ -7,26 +7,18 @@ body {
 	background-color: rgb(233, 233, 233);
 }
 
-.btn-radius-25 {
-	border-radius: 25px;
-}
-
 /*********** HEADING *************/
 
 h1 {
 	font-size: 115px;
-	display: flex;
-	justify-content: center;
-	padding: 55px 0 50px 0;
+	text-align: center;
 }
-
-/***************** HEADER ******************/
 
 /***************** CONTENT ******************/
 
-/***************** PRE-FOOTER ***************/
-
-/***************** FOOTER ******************/
+.btn-radius-25 {
+	border-radius: 25px;
+}
 
 .z-index-background {
 	z-index: 5;
@@ -43,23 +35,20 @@ h1 {
 }
 
 .default-size-card {
-	height: 500px;
+	height: 600px;
 }
 
 .expanded-main-card {
-	height: 550px;
+	height: 650px;
 }
 
 .no-border {
 	border: 0;
 }
 
-.shading {
-	box-shadow: 0px 2px 8px #777777;
-}
-
-.border-bottom {
-	border-bottom: solid black;
+.border {
+	border-bottom: solid 0.75px;
+	color: black;
 }
 
 .cards-pricing {
@@ -73,11 +62,59 @@ h1 {
 	}
 }
 
-/********* PRE-FOOTER & FOOTER PARTS **********/
+.bg-color {
+	background-color: $main-bg-color;
+	color: $font-color;
+}
+.rounded-l {
+	border-top-left-radius: 0.25rem !important;
+	border-bottom-left-radius: 0.25rem !important;
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
 
-/********* PRE FOOTER *********/
+.rounded-r {
+	border-top-right-radius: 0.25rem !important;
+	border-bottom-right-radius: 0.25rem !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+}
 
-/********* FOOTER **********/
+.grid-center {
+	display: grid;
+	place-items: center;
+}
+
+.star-icon-style {
+	background-color: #ffffff;
+	transform: translateY(-32px);
+	width: 25px;
+	margin: auto;
+}
+
+.grid-container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	place-items: center;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'int dec'
+		'int duration';
+}
+.int {
+	grid-area: int;
+	font-size: 64px;
+}
+.dec {
+	grid-area: dec;
+}
+.duration {
+	grid-area: duration;
+}
 
 /******** COLORS SECTIONS **********/
 
@@ -87,11 +124,6 @@ h1 {
 
 .turquoise-element {
 	color: $darker-color-sections;
-}
-
-.bg-color {
-	background-color: $main-bg-color;
-	color: $font-color;
 }
 
 .bg-color-banneer-w {
@@ -138,21 +170,23 @@ a {
 	color: #ffffff;
 }
 
-.rounded-l {
-	border-top-left-radius: 0.25rem !important;
-	border-bottom-left-radius: 0.25rem !important;
-	border-bottom-right-radius: 0 !important;
-	border-top-right-radius: 0 !important;
-}
+/*********** QUERIES ************/
 
-.rounded-r {
-	border-top-right-radius: 0.25rem !important;
-	border-bottom-right-radius: 0.25rem !important;
-	border-bottom-left-radius: 0 !important;
-	border-top-left-radius: 0 !important;
-}
-
-.grid-center {
-	display: grid;
-	place-items: center;
+.svg-test {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+	@include media-breakpoint-up(sm) {
+		display: block;
+		width: 640px;
+	}
+	@include media-breakpoint-up(md) {
+		width: 800px;
+	}
+	@include media-breakpoint-up(lg) {
+		width: 900px;
+	}
+	@include media-breakpoint-up(xl) {
+		width: 940px;
+	}
 }

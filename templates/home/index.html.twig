@@ -1,29 +1,28 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<div class="row justify-content-center">
+	<div class="row justify-content-center p-3">
 		<div class="col-12">
 			<h1>
 				Tarifs
 			</h1>
 		</div>
 	</div>
-	<div class="row justify-content-center text-center p-5 mb-5">
-		<div class="col-3 mx-lg-n3">
-			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Particulier</button>
+	<div class="row justify-content-center text-center p-2 mb-5">
+		<div class="col-3 mx-md-4 mx-lg-0 mx-lg-n3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shadow">Particulier</button>
 		</div>
-		<div class="col-3 mx-lg-n3">
-			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Professionnel</button>
+		<div class="col-3 mx-md-4 mx-lg-0 mx-lg-n3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shadow">Professionnel</button>
 		</div>
-		<div class="col-3 mx-lg-n3">
-			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shading">Financement CPF</button>
+		<div class="col-3 mx-md-4 mx-lg-0 mx-lg-n3">
+			<button type="button" class="btn btn-light btn-radius-25 btn-default-size shadow">Financement CPF</button>
 		</div>
 	</div>
 	<div class="row justify-content-center">
 		<div>
 			<img src="{{ asset('build/images/turquoise-citrus-forms.svg') }}"
-				width="940px"
-				class="position-absolute img-fluid mt-n4 mr-n5 ml-n5"
+				class="position-absolute svg-test img-fluid mt-n4 mr-n5 ml-n5"
 				alt=" turquoise and citrus flat forms" />
 		</div>
 		<div class="col-3 pr-0 grid-center">
@@ -35,8 +34,19 @@
 					<img src="{{ asset('build/images/solo.png') }}"
 						alt="solo picture"
 						class="my-3 w-50 img-fluid rounded-circle" />
-					<p>
-						<strong class="card-detail">Accès illimité à toutes les langues</strong>
+					<div class="grid-container turquoise-txt">
+						<div class="int">
+							19
+						</div>
+						<div class="dec">
+							,90€
+						</div>
+						<div class="duration">
+							/mois
+						</div>
+					</div>
+					<p class="font-weight-bold turquoise-txt font-14">
+						Accès illimité à toutes les langues
 					</p>
 					<ul class="card-text list-unstyled mb-2 font-weight-light">
 						<li class="font-14 pb-2">1 écran simultané</li>
@@ -44,23 +54,45 @@
 						<li class="font-14 pb-2">Annulable à tout moment</li>
 					</ul>
 					<p>
-						<strong class="card-sub-days turquoise-txt">14 jours d'essai gratuit</strong>
+						<strong class="card-sub-days font-14 turquoise-txt">14 jours d'essai gratuit</strong>
 					</p>
-					<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					<button type="button" class="btn btn-color btn-radius-25 font-14 font-weight-lighter">Choisir</button>
 				</div>
 			</div>
 		</div>
 		<div class="col-3 px-0 grid-center">
 			<div class="card no-border expanded-main-card rounded shadow" style="z-index:10;">
 				<div class="card-body text-center">
+					<div class="rounded-circle star-icon-style">
+						<img src="{{ asset('build/images/icon-star.svg') }}"
+							class="rounded-circle"
+							width="20px"
+							alt="star-icon" />
+					</div>
+					<p class="font-weight-lighter font-12">
+						La plus populaire
+					</p>
 					<h5 class="card-title">
 						FAMILLE
 					</h5>
 					<img src="{{ asset('build/images/family.png') }}"
 						alt="family picture"
 						class="my-3 w-50 img-fluid rounded-circle" />
-					<p>
-						<strong class="card-detail">Accès illimité à toutes les langues</strong>
+
+					<div class="grid-container turquoise-txt">
+						<div class="int">
+							19
+						</div>
+						<div class="dec">
+							,90€
+						</div>
+						<div class="duration">
+							/mois
+						</div>
+					</div>
+
+					<p class="font-weight-bold turquoise-txt font-14">
+						Accès illimité à toutes les langues
 					</p>
 					<ul class="card-text list-unstyled mb-2 font-weight-light">
 						<li class="font-14 pb-2">4 écrans simultanés</li>
@@ -68,16 +100,16 @@
 						<li class="font-14 pb-2">Sans engagement</li>
 						<li class="font-14 pb-2">Annulable à tout moment</li>
 					</ul>
-					<p>
-						<strong class="card-sub-days turquoise-txt">14 jours d'essai gratuit</strong>
+					<p class="font-weight-bold font-14 turquoise-txt">
+						14 jours d'essai gratuit
 					</p>
-					<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					<button type="button" class="btn btn-color btn-radius-25 font-14 font-weight-lighter">Choisir</button>
 				</div>
 			</div>
 		</div>
 		<div class="col-3 pl-0 grid-center">
 			<div class="card no-border rounded-r shadow">
-				<div class="card-body text-center default-size-card shadding">
+				<div class="card-body text-center default-size-card shadow">
 					<h5 class="card-title">
 						À VIE
 					</h5>
@@ -86,46 +118,75 @@
 							alt="family picture"
 							class="my-3 w-50 img-fluid rounded-circle" />
 					</div>
-					<p>
-						<strong class="card-detail font-14">Accès illimité à toutes les langues</strong>
+					<div class="grid-container turquoise-txt">
+						<div class="int">
+							19
+						</div>
+						<div class="dec">
+							,90€
+						</div>
+						<div class="duration">
+							/mois
+						</div>
+					</div>
+					<p class="font-weight-bold turquoise-txt font-14">
+						Accès illimité à toutes les langues
 					</p>
 					<ul class="card-text list-unstyled mb-2 font-weight-light">
 						<li class="font-14 pb-2">1 écran simultané</li>
 					</ul>
-					<p>
-						<strong class="card-sub-days turquoise-txt">14 jours d'essai gratuit</strong>
+					<p class="font-weight-bold font-14 turquoise-txt">
+						14 jours d'essai gratuit
 					</p>
-					<button type="button" class="btn btn-color btn-radius-25">Choisir</button>
+					<button type="button" class="btn btn-color btn-radius-25 font-14 font-weight-lighter">Choisir</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row justify-content-center p-5">
 		<div class="col-12 text-center">
-			<a class="nav-link topnav-links text-center" href="#">
+			<a class="nav-link topnav-links text-center font-weight-light" href="#">
 				Questions fréquentes<i class="fas fa-angle-right turquoise-element ml-2"></i>
 			</a>
 		</div>
 	</div>
 	<div class="row justify-content-center">
-		<div class="col-12">
-			<div class="col-8">
-				<div class="card mb-3" style="background-image: url({{ asset('build/images/smartphone-user.png') }})">
-					<div class="row no-gutters">
-						<div class="col-3 bg-color-banneer-w"></div>
-						<div class="col-9 p-5 bg-color-banneer-t font-white">
-							<h4 class="card-title">
-								Vous avez un CPF?
-							</h4>
-							<p class="card-text font-weight-lighter">
-								When I was a young man, even a teenager for that matter, I always had an optimism that was hard
-								for.
-							</p>
+		<div class="col-8">
+			<div class="card mb-3"
+				style="background-image: url({{
+				asset(
+					'build/images/smartphone-user.png'
+				)
+				}});background-repeat: repeat;background-size: cover;">
+				<div class="row no-gutters">
+					<div class="col-3 bg-color-banneer-w"></div>
+					<div class="col-9 p-5 bg-color-banneer-t font-white">
+						<div class="row">
+							<div class="col-10">
+								<h4 class="card-title">
+									Vous avez un CPF?
+								</h4>
+								<p class="card-text font-weight-lighter">
+									When I was a young man, even a teenager for that matter, I always had an optimism that was
+									hard for.
+								</p>
+							</div>
+							<div class="col-2 grid-center">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="#d0ff00">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7" />
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	{% include '_prefooter-banneer.html.twig' %}
+	<div class="row justify-content-center p-5">
+		<div class="col-12 border"></div>
+	</div>
 {% endblock %}
