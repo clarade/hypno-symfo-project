@@ -78,7 +78,6 @@
 					<img src="{{ asset('build/images/family.png') }}"
 						alt="family picture"
 						class="my-3 w-50 img-fluid rounded-circle" />
-
 					<div class="grid-container turquoise-txt">
 						<div class="int">
 							19
@@ -152,15 +151,17 @@
 	</div>
 	<div class="row justify-content-center">
 		<div class="col-8">
-			<div class="card mb-3"
+			<div class="card mb-3 rounded"
 				style="background-image: url({{
 				asset(
 					'build/images/smartphone-user.png'
 				)
 				}});background-repeat: repeat;background-size: cover;">
 				<div class="row no-gutters">
-					<div class="col-3 bg-color-banneer-w"></div>
-					<div class="col-9 p-5 bg-color-banneer-t font-white">
+					<div class="col-3 bg-color-banneer-w rounded-left cpf-style">
+						<img src="{{ asset('build/images/cpf-logo.png') }}" alt="CPF Logo" class="cpf-logo" />
+					</div>
+					<div class="col-9 p-5 bg-color-banneer-t font-white rounded-right">
 						<div class="row">
 							<div class="col-10">
 								<h4 class="card-title">

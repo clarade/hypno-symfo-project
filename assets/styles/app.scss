@@ -118,6 +118,10 @@ h1 {
 
 /******** COLORS SECTIONS **********/
 
+button:hover {
+	background-color: $main-bg-color !important;
+}
+
 .citrus-element {
 	color: $citrus-color;
 }
@@ -136,6 +140,17 @@ h1 {
 	opacity: 70%;
 }
 
+.cpf-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cpf-logo {
+	width: 150px;
+	height: 100px;
+}
+
 .footer-color {
 	background-color: $darker-color-sections;
 	color: $font-color;
@@ -151,6 +166,14 @@ h1 {
 
 a {
 	color: white;
+}
+
+a:hover {
+	color: $main-bg-color;
+}
+
+footer a:hover {
+	color: $citrus-color;
 }
 
 .turquoise-txt {
