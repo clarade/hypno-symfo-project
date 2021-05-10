@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>FLAG/francais</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="21.9480349" cy="21.8154424" rx="21.9480349" ry="21.8154424"></ellipse>
+    </defs>
+    <g id="FLAG/francais" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="francais" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <ellipse stroke="#F3F3F3" cx="21.9480349" cy="21.8154424" rx="22.4480349" ry="22.3154424"></ellipse>
+            <g id="Group-4" mask="url(#mask-2)">
+                <g transform="translate(-0.930747, -1.250375)">
+                    <rect id="Rectangle" fill="#052CC7" x="0" y="0" width="15" height="46"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#D70000" x="31" y="0" width="15" height="46"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

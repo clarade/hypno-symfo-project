@@ -1,19 +1,29 @@
-<div class="row justify-content-center">
-    <div class="col-12 p-2">
-        <div class="col">
-          <img src="{{ asset('build/images/LOGO.svg') }}" alt="Hypnoledge Logo">
-        </div>
-        <div class="col">
-          <a class="nav-link  topnav-links" href="#">Organisations <i class="fas fa-angle-down"></i></a>
-        </div>
-        <div class="col">
-          <a class="nav-link  topnav-links" href="#">Tarifs</a>
-        </div>
-        <div class="col">
-          <a class="nav-link  topnav-links" href="#">Se connecter</a>
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-color btn-radius-25 shading">Commencer à apprendre</button>
-        </div>
-    </div>
-</div>
+<nav class="navbar navbar-expand-lg font-14">
+	<img src="{{ asset('build/images/LOGO.svg') }}" alt="Hypnoledge Logo" />
+	<ul class="navbar-nav ml-5 mr-auto">
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle topnav-links"
+				href="#"
+				id="navbarDropdown"
+				role="button"
+				data-toggle="dropdown"
+				aria-haspopup="true"
+				aria-expanded="false">
+				Organisations
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown"  role="menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</li>
+		<li class="nav-item"><a class="nav-link topnav-links" href="#">Tarifs</a></li>
+	</ul>
+
+	<a class="topnav-links mr-4" href="#">Connexion</a>
+	<button type="button" class="btn btn-color btn-radius-25 font-14 shadow mr-4">Commencer à apprendre</button>
+	<img src="{{ asset('build/images/francais.svg') }}"
+		height="20px"
+		alt="language-select" /><i class="fas fa-angle-down ml-2"></i>
+</nav>
