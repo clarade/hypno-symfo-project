@@ -17,3 +17,8 @@ import './styles/app.scss'
 import './bootstrap'
 
 global.$ = global.jQuery = $
+
+$('#navbarDropdown').on('show.bs.dropdown', function () {
+	// do something...
+	console.log('toto')
+})
